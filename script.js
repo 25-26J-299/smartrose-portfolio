@@ -7,8 +7,34 @@ const toTopBtn = document.querySelector(".to-top-btn");
 const domainSection = document.getElementById("domain");
 const navAnchors = [...document.querySelectorAll("#navLinks a")];
 const pageSections = [...document.querySelectorAll("main section[id], header[id]")];
+const heroBgSlider = document.getElementById("heroBgSlider");
 
 if (year) year.textContent = new Date().getFullYear();
+
+if (heroBgSlider) {
+  const imageList = (heroBgSlider.dataset.images || "")
+    .split(",")
+    .map((img) => img.trim())
+    .filter(Boolean);
+  const layers = heroBgSlider.querySelectorAll(".hero-bg-layer");
+
+  if (imageList.length && layers.length >= 2) {
+    let activeLayerIndex = 0;
+    let imageIndex = 0;
+    layers[activeLayerIndex].style.backgroundImage = `url("${imageList[imageIndex]}")`;
+
+    if (imageList.length > 1) {
+      setInterval(() => {
+        const nextLayerIndex = activeLayerIndex === 0 ? 1 : 0;
+        imageIndex = (imageIndex + 1) % imageList.length;
+        layers[nextLayerIndex].style.backgroundImage = `url("${imageList[imageIndex]}")`;
+        layers[nextLayerIndex].classList.add("hero-bg-layer--active");
+        layers[activeLayerIndex].classList.remove("hero-bg-layer--active");
+        activeLayerIndex = nextLayerIndex;
+      }, 4500);
+    }
+  }
+}
 
 if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {

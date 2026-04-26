@@ -20,9 +20,21 @@
 <body>
   <div class="rose-bg" aria-hidden="true"></div>
   <header class="site-header" id="home">
+    <div
+      class="hero-bg-slider"
+      id="heroBgSlider"
+      data-images="./images/bg-cycle-3.png,./images/bg-cycle-4.png,./images/bg-cycle-5.png"
+      aria-hidden="true"
+    >
+      <div class="hero-bg-layer hero-bg-layer--active"></div>
+      <div class="hero-bg-layer"></div>
+    </div>
     <nav class="nav">
       <div class="container nav-inner">
-        <a class="brand" href="#home">SmartRose</a>
+        <a class="brand" href="#home">
+          <img class="brand-logo" src="./images/smartrose-logo.png" alt="SmartRose icon" />
+          <span>SmartRose</span>
+        </a>
         <button class="nav-toggle" id="navToggle" aria-label="Open menu">Menu</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
@@ -37,39 +49,47 @@
     </nav>
 
     <div class="hero container reveal">
-      <p class="tag">Research Portfolio</p>
-      <h1>A Unified AI-IoT Platform for Optimized Greenhouse Rose Cultivation</h1>
-      <p class="hero-copy">
-        SmartRose integrates early disease-risk prediction, nutrient optimization, stress-aware greenhouse
-        control, and post-harvest freshness prediction into one lifecycle intelligence platform.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#domain">Explore Domain</a>
-        <a class="btn btn-secondary" href="#contact">Collaborate</a>
+      <div class="hero-stage">
+        <p class="tag">Research Portfolio</p>
+        <img class="hero-logo" src="./images/smartrose-slider-logo.png" alt="SmartRose logo" />
+        <h1>A Unified AI-IoT Platform for Optimized Greenhouse Rose Cultivation</h1>
+        <p class="hero-copy">
+          SmartRose integrates early disease-risk prediction, nutrient optimization, stress-aware greenhouse
+          control, and post-harvest freshness prediction into one lifecycle intelligence platform.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#domain">Explore Domain</a>
+          <a class="btn btn-secondary" href="#contact">Collaborate</a>
+        </div>
       </div>
+    </div>
+  </header>
+
+  <section class="hero-details-band reveal" aria-label="Project highlights and visuals">
+    <div class="container hero-details-wrap">
       <div class="hero-metrics" aria-label="Project highlights">
-        <div class="metric">
+        <div class="metric detail-card">
           <span class="metric-value">04</span>
           <span class="metric-label">Intelligent Modules</span>
         </div>
-        <div class="metric">
+        <div class="metric detail-card">
           <span class="metric-value">81%</span>
           <span class="metric-label">Evaluation Weight Covered</span>
         </div>
-        <div class="metric">
+        <div class="metric detail-card">
           <span class="metric-value">AI + IoT</span>
           <span class="metric-label">Integrated Architecture</span>
         </div>
       </div>
       <div class="hero-inline-details">
-        <div class="hero-inline-item">
+        <div class="hero-inline-item detail-card">
           <h3>Project Introduction</h3>
           <p>
             SmartRose is an AI-IoT research platform for greenhouse rose cultivation, designed to support
             data-driven and timely decisions from growth to post-harvest handling.
           </p>
         </div>
-        <div class="hero-inline-item">
+        <div class="hero-inline-item detail-card">
           <h3>Outcomes &amp; deliverables</h3>
           <p>
             Problem definition, architecture, models, and experiments feed into reports, presentations, the research
@@ -77,8 +97,13 @@
           </p>
         </div>
       </div>
+      <div class="hero-gallery" aria-label="Greenhouse rose visuals">
+        <img src="./images/hero-rose-close.png" alt="Close-up roses inside greenhouse" loading="lazy" />
+        <img src="./images/hero-rose-greenhouse.png" alt="Greenhouse rows with rose plants" loading="lazy" />
+        <img src="./images/hero-rose-wide.png" alt="Wide greenhouse with roses" loading="lazy" />
+      </div>
     </div>
-  </header>
+  </section>
 
   <main>
     <section class="section alt reveal" id="domain">
