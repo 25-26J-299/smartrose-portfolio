@@ -1,51 +1,52 @@
-# SmartRose (Portfolio & Freshness Monitoring)
+# SmartRose Portfolio
 
-**Freshness Monitoring (FM)** — freshness monitoring for the SmartRose project.
+Static website for the SmartRose research portfolio: HTML, CSS, JavaScript, and images. No build step.
 
-**Portfolio** — static site in this repo for the SmartRose research portfolio.
+**Repository:** [github.com/25-26J-299/smartrose-portfolio](https://github.com/25-26J-299/smartrose-portfolio)
 
-## Repository structure
+## Project layout
 
-- `iot/` — Arduino sketches and IoT firmware
-- `ml/` — machine learning models and data processing
-- `docs/` — documentation and specifications
-- (site root) — HTML, CSS, JS, and assets for the public portfolio
+- `index.html` — main page
+- `styles.css` — site styles
+- `script.js` — client-side behavior
+- `images/` — image assets
+- `netlify.toml` / `vercel.json` — deployment settings
 
-## Run the portfolio locally
+## Run locally
 
-From this folder:
+From this directory:
 
 ```bash
-python3 -m http.server 8090
+python3 -m http.server 8080
 ```
 
-Then open [http://localhost:8090](http://localhost:8090).
+Open [http://localhost:8080](http://localhost:8080) in your browser. You can use another port if 8080 is busy.
 
-## Deploy the static site
+## Deploy
 
-### 1) Vercel (recommended)
+Push to `main` on this repo, then connect the site to a host of your choice.
 
-1. Push this repository to GitHub.
-2. In [Vercel](https://vercel.com/), import the repo.
-3. Framework preset: **Other**.
-4. Build command: *(leave empty)*.
-5. Output directory: `.`.
-6. Deploy.
+### Vercel
 
-### 2) Netlify
-
-1. Push to GitHub.
-2. In [Netlify](https://www.netlify.com/), add new site from Git.
-3. Build command: *(leave empty)*.
-4. Publish directory: `.`.
+1. In [Vercel](https://vercel.com/), import [this GitHub repository](https://github.com/25-26J-299/smartrose-portfolio).
+2. Framework preset: **Other**.
+3. Build command: leave **empty**.
+4. Output directory: **`.`** (project root).
 5. Deploy.
 
-### 3) GitHub Pages
+### Netlify
 
-1. Push to a repo.
-2. In repo settings, enable Pages from branch (`main`) and folder (`/root`).
-3. The site is served as static files.
+1. In [Netlify](https://www.netlify.com/), add a new site from this Git repository.
+2. Build command: leave **empty**.
+3. Publish directory: **`.`** (project root).
+4. Deploy.
 
-## FM development
+### GitHub Pages
 
-For IoT, ML, and docs work, see the `iot/`, `ml/`, and `docs/` directories. Add project-specific setup and requirements there as the project grows.
+1. In the repository on GitHub, open **Settings → Pages**.
+2. Set source to the **`main`** branch and the **/ (root)** folder.
+3. Save; the static files are served as the site.
+
+## Related SmartRose repositories
+
+Other components (for example Freshness Monitoring) live in their own org repositories under [github.com/25-26J-299](https://github.com/25-26J-299); this repo is only the public portfolio site.
