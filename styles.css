@@ -701,6 +701,14 @@ h3 {
   font-size: 0.86rem;
   padding: 1rem;
 }
+.literature-figure__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  border: 1px solid #ececf0;
+  background: #fff;
+}
 
 .literature-figure figcaption {
   margin-top: 0.75rem;
@@ -1076,6 +1084,35 @@ h3 {
 .doc-card__action:hover {
   text-decoration: underline;
   text-underline-offset: 0.12em;
+}
+.doc-card__action--pending {
+  color: #8a8a94 !important;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+}
+.doc-card--member-pdfs .doc-card__file-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 1.1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.doc-card--member-pdfs .doc-card__file-list a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--logo-green) !important;
+  text-decoration: none;
+}
+.doc-card--member-pdfs .doc-card__file-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+.doc-card__foot-note {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #888;
 }
 .team-group-title {
   margin-bottom: 1rem;
