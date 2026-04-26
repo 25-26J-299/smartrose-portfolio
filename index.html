@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartRose | Research Portfolio</title>
+  <meta
+    name="description"
+    content="SmartRose is a unified AI-IoT platform for optimized greenhouse rose cultivation."
+  />
+  <meta name="theme-color" content="#0d9488" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="rose-bg" aria-hidden="true"></div>
+  <header class="site-header" id="home">
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="#home">SmartRose</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#slides">Slides</a></li>
+          <li><a href="#team">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero container reveal">
+      <p class="tag">Research Portfolio</p>
+      <h1>A Unified AI-IoT Platform for Optimized Greenhouse Rose Cultivation</h1>
+      <p class="hero-copy">
+        SmartRose integrates early disease-risk prediction, nutrient optimization, stress-aware greenhouse
+        control, and post-harvest freshness prediction into one lifecycle intelligence platform.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#domain">Explore Domain</a>
+        <a class="btn btn-secondary" href="#contact">Collaborate</a>
+      </div>
+      <div class="hero-metrics" aria-label="Project highlights">
+        <div class="metric">
+          <span class="metric-value">04</span>
+          <span class="metric-label">Intelligent Modules</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">81%</span>
+          <span class="metric-label">Evaluation Weight Covered</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">AI + IoT</span>
+          <span class="metric-label">Integrated Architecture</span>
+        </div>
+      </div>
+      <div class="hero-inline-details">
+        <div class="hero-inline-item">
+          <h3>Project Introduction</h3>
+          <p>
+            SmartRose is an AI-IoT research platform for greenhouse rose cultivation, designed to support
+            data-driven and timely decisions from growth to post-harvest handling.
+          </p>
+        </div>
+        <div class="hero-inline-item">
+          <h3>Outcomes &amp; deliverables</h3>
+          <p>
+            Problem definition, architecture, models, and experiments feed into reports, presentations, the research
+            paper, and the published portfolio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section alt reveal" id="domain">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">Research</p>
+          <h2>Domain</h2>
+        </header>
+        <p class="section-intro">Survey, gaps, and where SmartRose sits in the rose lifecycle.</p>
+        <div class="domain-stack">
+          <article class="domain-block domain-block--literature" id="literature">
+            <p class="domain-subeyebrow">Project scope</p>
+            <h3 class="domain-block__title">Literature Survey</h3>
+            <div class="literature-layout">
+              <div class="literature-col literature-col--visual">
+                <div class="literature-insight">
+                  <span class="literature-insight__badge" aria-hidden="true">AI</span>
+                  <p>
+                    Controlled-environment agriculture increasingly combines IoT sensing with ML, but end-to-end rose
+                    lifecycle coverage remains limited in published work [1].
+                  </p>
+                </div>
+                <figure class="literature-figure">
+                  <div class="literature-figure__placeholder" role="img" aria-label="Figure 1 — survey context">
+                    <span>Figure 1 — production, quality, or adoption trend [1]</span>
+                  </div>
+                  <figcaption>Figure 1. Indicative trend supporting the survey context [1].</figcaption>
+                </figure>
+              </div>
+              <div class="literature-col literature-col--text">
+                <p>
+                  AI-IoT adoption in controlled agriculture has shown strong potential for predictive, data-driven systems.
+                  Most prior work remains task-specific and does not cover the complete rose cultivation lifecycle from
+                  propagation to post-harvest shelf life.
+                </p>
+                <p>
+                  SmartRose situates itself in this landscape by targeting an integrated platform: risk prediction,
+                  nutrient intelligence, stress-aware operation, and freshness estimation—areas that are rarely unified in
+                  a single research and engineering effort.
+                </p>
+                <div class="literature-refs">
+                  <h4>References</h4>
+                  <ol>
+                    <li>Full survey citations appear in the research report and follow the program referencing standard.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="domain-block domain-block--gap" id="gap">
+            <h3 class="domain-block__title">Research Gap</h3>
+            <p class="domain-gap-lead">
+              Three limitations in current work motivate SmartRose: fragmentation, reactive control, and weak post-harvest linkage.
+            </p>
+            <div class="gap-cols">
+              <div class="gap-col">
+                <div class="gap-col__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+                </div>
+                <h4 class="gap-col__title">Task fragmentation</h4>
+                <p class="gap-col__text">Existing systems often address single tasks (e.g. irrigation or a single model) without an integrated lifecycle view for greenhouse roses.</p>
+              </div>
+              <div class="gap-col">
+                <div class="gap-col__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 3v18h18"/><path d="M7 12l4-4 4 4 6-6"/></svg>
+                </div>
+                <h4 class="gap-col__title">Reactive decisions</h4>
+                <p class="gap-col__text">Many pipelines still depend on visible stress or manual checks, reducing the value of early warning and proactive control.</p>
+              </div>
+              <div class="gap-col">
+                <div class="gap-col__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h7"/><path d="M16 3v4a4 4 0 0 0 4 4h4"/></svg>
+                </div>
+                <h4 class="gap-col__title">Information &amp; post-harvest gap</h4>
+                <p class="gap-col__text">Freshness and vase-life signals are seldom connected back to cultivation-stage models for decision support.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="domain-block" id="problem">
+            <h3 class="domain-block__title">Research Problem &amp; Solution</h3>
+            <p>
+              How can greenhouse rose cultivation be optimized end-to-end using a unified platform that supports early
+              warning, nutrient intelligence, stress-aware control, and post-harvest prediction?
+            </p>
+            <p>
+              SmartRose addresses this through a single architecture that combines sensing, machine learning, and
+              decision support for growers and floriculture stakeholders.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt reveal" id="modules">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">Architecture</p>
+          <h2>Core Intelligent Modules</h2>
+        </header>
+        <p class="section-intro">Four ML features: risk, nutrients, environment, and post-harvest freshness.</p>
+        <div class="grid four">
+          <article class="card module-card">
+            <h3>01</h3>
+            <h4>Early Disease Risk Prediction</h4>
+            <p>Binary stress-risk classification using environmental and physiological sensor signals.</p>
+          </article>
+          <article class="card module-card">
+            <h3>02</h3>
+            <h4>Intelligent Nutrient Management</h4>
+            <p>Nutrient forecasting and fertilizer optimization with regression-based machine learning.</p>
+          </article>
+          <article class="card module-card">
+            <h3>03</h3>
+            <h4>Stress and Energy Optimization</h4>
+            <p>Stress-level prediction with recommendations for ventilation, cooling, lighting, and irrigation.</p>
+          </article>
+          <article class="card module-card">
+            <h3>04</h3>
+            <h4>Post-Harvest Freshness Prediction</h4>
+            <p>Freshness score and remaining vase-life estimation for improved quality preservation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="methodology">
+      <header class="section-heading">
+        <p class="section-eyebrow">Approach</p>
+        <h2>Methodology</h2>
+      </header>
+      <p class="section-intro">Sensors, connectivity, learning models, and the grower dashboard—plus the main inputs and outputs used.</p>
+      <div class="method-flow">
+        <article class="flow-card">
+          <span class="flow-step">01</span>
+          <h3>Sensing Layer</h3>
+          <p>Captures temperature, humidity, soil moisture, pH, EC, NPK, light, and leaf temperature.</p>
+        </article>
+        <article class="flow-card">
+          <span class="flow-step">02</span>
+          <h3>Communication Layer</h3>
+          <p>Streams data through Wi-Fi and LoRa to support both local and distributed greenhouse setups.</p>
+        </article>
+        <article class="flow-card">
+          <span class="flow-step">03</span>
+          <h3>Intelligence Layer</h3>
+          <p>Runs Random Forest-based classification and regression for disease risk, stress, and freshness.</p>
+        </article>
+        <article class="flow-card">
+          <span class="flow-step">04</span>
+          <h3>Application Layer</h3>
+          <p>Delivers recommendations, risk alerts, and monitoring summaries through a user dashboard.</p>
+        </article>
+      </div>
+      <div class="grid two method-panels">
+        <article class="card">
+          <h3>Input Feature Groups</h3>
+          <ul class="simple-list">
+            <li>Environmental: Temperature, Humidity, Light</li>
+            <li>Soil: Moisture, pH, EC, NPK</li>
+            <li>Physiological: Leaf temperature, Delta-T indicators</li>
+            <li>Post-harvest: Ethylene, water level, storage duration</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Model Outputs</h3>
+          <ul class="simple-list">
+            <li>Healthy vs Stress-Risk classification</li>
+            <li>Nutrient recommendation values</li>
+            <li>Stress level: LOW / MEDIUM / HIGH</li>
+            <li>Freshness score and vase-life estimate</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt reveal" id="technologies">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">Stack</p>
+          <h2>Technologies Used</h2>
+        </header>
+        <p class="section-intro">Languages and tools for APIs, ML, data, and client apps.</p>
+        <div class="tech-logo-grid">
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Python</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">FastAPI</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Scikit-learn</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">NumPy</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Pandas</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">MongoDB</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Flutter</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Dart</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">React</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">TypeScript</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Tailwind CSS</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Vite</span>
+          </article>
+          <article class="tech-logo-item">
+            <div class="tech-logo-disc">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino / IoT" loading="lazy" />
+            </div>
+            <span class="tech-logo-label">Arduino / IoT</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="milestones">
+      <header class="section-heading">
+        <p class="section-eyebrow">Milestones</p>
+        <h2>Timeline in Brief</h2>
+      </header>
+      <p class="section-intro milestone-lead">Coursework steps and mark weights; the entries below account for about 81% of the final grade.</p>
+      <div class="timeline-pro" role="list">
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Project Proposal</h3>
+            <p class="timeline-pro__desc">Initial problem definition, scope, and proposed SmartRose architecture.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 6%</p>
+            <div class="timeline-bar" role="img" aria-label="6% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:6%"></div></div>
+              <span class="timeline-bar__pct">6%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Progress Presentation I</h3>
+            <p class="timeline-pro__desc">Approximately 50% completion, preliminary results, and validation plan.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 6%</p>
+            <div class="timeline-bar" role="img" aria-label="6% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:6%"></div></div>
+              <span class="timeline-bar__pct">6%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Research Paper</h3>
+            <p class="timeline-pro__desc">Contribution, methodology, experiments, and analysis in manuscript form.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 10%</p>
+            <div class="timeline-bar" role="img" aria-label="10% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:10%"></div></div>
+              <span class="timeline-bar__pct">10%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item timeline-pro__item--active" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--active"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--teal">TBD</span>
+            <h3 class="timeline-pro__title">Progress Presentation II</h3>
+            <p class="timeline-pro__desc">Advanced integration, system validation, and near-final design review.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 18%</p>
+            <div class="timeline-bar" role="img" aria-label="18% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--active" style="width:18%"></div></div>
+              <span class="timeline-bar__pct">18%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Website Assessment</h3>
+            <p class="timeline-pro__desc">Portfolio structure, content quality, and presentation of research work.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 2%</p>
+            <div class="timeline-bar" role="img" aria-label="2% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:2%"></div></div>
+              <span class="timeline-bar__pct">2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Final Report</h3>
+            <p class="timeline-pro__desc">Complete documentation, final results, and individual contributions.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 19%</p>
+            <div class="timeline-bar" role="img" aria-label="19% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:19%"></div></div>
+              <span class="timeline-bar__pct">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pro__item" role="listitem">
+          <div class="timeline-pro__marker" aria-hidden="true"><span class="timeline-diamond timeline-diamond--past"></span></div>
+          <div class="timeline-pro__body">
+            <span class="timeline-date timeline-date--dark">TBD</span>
+            <h3 class="timeline-pro__title">Final Presentation &amp; Viva</h3>
+            <p class="timeline-pro__desc">Final demo, Q&amp;A, and individual oral examination.</p>
+            <p class="timeline-pro__marks"><span class="timeline-marks-label">Marks allocated</span> : 20%</p>
+            <div class="timeline-bar" role="img" aria-label="20% of total grade">
+              <div class="timeline-bar__track"><div class="timeline-bar__fill timeline-bar__fill--done" style="width:20%"></div></div>
+              <span class="timeline-bar__pct">20%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt reveal" id="documents">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">Downloads</p>
+          <h2>Documents</h2>
+        </header>
+        <p class="section-intro">Project documents and submission files for download.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Project Charter</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Proposal Document</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Checklist Documents</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Status Documents</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Research Paper</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Individual</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Final Document Set</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+          <article class="doc-card">
+            <div class="doc-card__top">
+              <span class="doc-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              </span>
+              <div>
+                <h3 class="doc-card__title">Poster</h3>
+                <p class="doc-card__meta">—</p>
+              </div>
+            </div>
+            <div class="doc-card__divider"></div>
+            <div class="doc-card__foot">
+              <span>Group</span>
+              <a class="doc-card__action" href="#">Download</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="slides">
+      <header class="section-heading">
+        <p class="section-eyebrow">Presentations</p>
+        <h2>Slides</h2>
+      </header>
+      <p class="section-intro">Progress and final presentation slide decks by review stage.</p>
+      <div class="doc-grid doc-grid--slides">
+        <article class="doc-card">
+          <div class="doc-card__top">
+            <span class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M9 12h12"/></svg>
+            </span>
+            <div>
+              <h3 class="doc-card__title">Proposal presentation</h3>
+              <p class="doc-card__meta">—</p>
+            </div>
+          </div>
+          <div class="doc-card__divider"></div>
+          <div class="doc-card__foot">
+            <span>Group</span>
+            <a class="doc-card__action" href="#">Open slides</a>
+          </div>
+        </article>
+        <article class="doc-card">
+          <div class="doc-card__top">
+            <span class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M9 12h12"/></svg>
+            </span>
+            <div>
+              <h3 class="doc-card__title">Progress presentation I</h3>
+              <p class="doc-card__meta">—</p>
+            </div>
+          </div>
+          <div class="doc-card__divider"></div>
+          <div class="doc-card__foot">
+            <span>Group</span>
+            <a class="doc-card__action" href="#">Open slides</a>
+          </div>
+        </article>
+        <article class="doc-card">
+          <div class="doc-card__top">
+            <span class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M9 12h12"/></svg>
+            </span>
+            <div>
+              <h3 class="doc-card__title">Progress presentation II</h3>
+              <p class="doc-card__meta">—</p>
+            </div>
+          </div>
+          <div class="doc-card__divider"></div>
+          <div class="doc-card__foot">
+            <span>Group</span>
+            <a class="doc-card__action" href="#">Open slides</a>
+          </div>
+        </article>
+        <article class="doc-card">
+          <div class="doc-card__top">
+            <span class="doc-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M9 12h12"/></svg>
+            </span>
+            <div>
+              <h3 class="doc-card__title">Final presentation</h3>
+              <p class="doc-card__meta">—</p>
+            </div>
+          </div>
+          <div class="doc-card__divider"></div>
+          <div class="doc-card__foot">
+            <span>Group</span>
+            <a class="doc-card__action" href="#">Open slides</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt reveal" id="team">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">People</p>
+          <h2>About Us</h2>
+        </header>
+        <p class="section-intro">Supervisors and student team, with contacts.</p>
+
+        <h3 class="team-group-title">Supervisors</h3>
+        <div class="team-grid">
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/anjana-vidanaralage.png" alt="Anjana Junius Vidanaralage" />
+            </div>
+            <h3 class="person-card__name">Anjana Junius Vidanaralage</h3>
+            <span class="person-card__role">Supervisor</span>
+            <p class="person-card__level">Faculty</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Computing</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="mailto:junius.a@sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/kaushika-kahatapitiya.png" alt="Kaushika Kahatapitiya" />
+            </div>
+            <h3 class="person-card__name">Kaushika Kahatapitiya</h3>
+            <span class="person-card__role">Co-Supervisor</span>
+            <p class="person-card__level">Faculty</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Computing</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="mailto:kaushika.k@sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="team-group-title second">Our Team</h3>
+        <div class="team-grid">
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/maleen-rodrigo.png" alt="Maleen Rodrigo" />
+            </div>
+            <h3 class="person-card__name">Maleen Rodrigo</h3>
+            <span class="person-card__role">Group member</span>
+            <p class="person-card__level">Undergraduate</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Information Technology</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="#" aria-label="Maleen on LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.07 2.07 0 0 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.777 13.019H3.56V9h3.554v11.452zM22.222 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.2.792 24 1.771 24h20.451C23.2 24 24 23.2 24 22.271V1.729C24 .774 23.2 0 22.222 0h.001z"/></svg>
+                LinkedIn
+              </a>
+              <a class="person-card__link" href="mailto:it22888648@my.sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/savinda-rajapaksha.png" alt="Savinda Rajapaksha" />
+            </div>
+            <h3 class="person-card__name">Savinda Rajapaksha</h3>
+            <span class="person-card__role">Group member</span>
+            <p class="person-card__level">Undergraduate</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Information Technology</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="#" aria-label="Savinda on LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.07 2.07 0 0 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.777 13.019H3.56V9h3.554v11.452zM22.222 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.2.792 24 1.771 24h20.451C23.2 24 24 23.2 24 22.271V1.729C24 .774 23.2 0 22.222 0h.001z"/></svg>
+                LinkedIn
+              </a>
+              <a class="person-card__link" href="mailto:it22358448@my.sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/chamikara-bandara.png" alt="Chamikara Bandara" />
+            </div>
+            <h3 class="person-card__name">Chamikara Bandara</h3>
+            <span class="person-card__role">Group member</span>
+            <p class="person-card__level">Undergraduate</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Information Technology</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="#" aria-label="Chamikara on LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.07 2.07 0 0 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.777 13.019H3.56V9h3.554v11.452zM22.222 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.2.792 24 1.771 24h20.451C23.2 24 24 23.2 24 22.271V1.729C24 .774 23.2 0 22.222 0h.001z"/></svg>
+                LinkedIn
+              </a>
+              <a class="person-card__link" href="mailto:it22367594@my.sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="person-card__photo person-card__photo--img">
+              <img src="./images/mahimi-perera.png" alt="Mahimi Perera" />
+            </div>
+            <h3 class="person-card__name">Mahimi Perera</h3>
+            <span class="person-card__role">Group member</span>
+            <p class="person-card__level">Undergraduate</p>
+            <p class="person-card__school">Sri Lanka Institute of Information Technology</p>
+            <p class="person-card__dept"><strong>Department</strong><br />Information Technology</p>
+            <div class="person-card__rule"></div>
+            <div class="person-card__links">
+              <a class="person-card__link" href="#" aria-label="Mahimi on LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.07 2.07 0 0 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.777 13.019H3.56V9h3.554v11.452zM22.222 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.2.792 24 1.771 24h20.451C23.2 24 24 23.2 24 22.271V1.729C24 .774 23.2 0 22.222 0h.001z"/></svg>
+                LinkedIn
+              </a>
+              <a class="person-card__link" href="mailto:it22326522@my.sliit.lk">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+                E-Mail
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt reveal pro-banner-section">
+      <div class="container">
+        <div class="pro-banner">
+          <p class="section-eyebrow">Outreach</p>
+          <h2>Project updates</h2>
+          <p>Releases and docs as the project moves.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="contact">
+      <header class="section-heading">
+        <p class="section-eyebrow">Reach out</p>
+        <h2>Contact us</h2>
+      </header>
+      <p class="section-intro">Send a message to the SmartRose project team.</p>
+      <div class="contact-layout">
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/it22888648@my.sliit.lk"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="[SmartRose] New message from portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_cc" value="it22358448@my.sliit.lk,it22367594@my.sliit.lk,it22326522@my.sliit.lk" />
+          <input type="hidden" name="_next" id="contactFormNext" value="" />
+          <input
+            type="text"
+            name="_honey"
+            class="contact-form__hp"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <div class="contact-form__field">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" required maxlength="200" placeholder="Your name" />
+          </div>
+          <div class="contact-form__field">
+            <label for="contactEmail">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              required
+              maxlength="320"
+              placeholder="you@example.com"
+              inputmode="email"
+              autocomplete="email"
+            />
+          </div>
+          <div class="contact-form__field">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" required rows="5" maxlength="5000" placeholder="How can we help?"></textarea>
+          </div>
+          <button class="btn btn-primary contact-form__submit" type="submit">Send message</button>
+        </form>
+        <aside class="pro-contact" aria-label="Other ways to reach the team">
+          <p class="pro-contact__label">General email</p>
+          <a class="pro-contact__email" href="mailto:smartrose@gmail.com">smartrose@gmail.com</a>
+          <p class="pro-contact__label pro-contact__label--spaced">Phone</p>
+          <a class="pro-contact__phone" href="tel:+94766871710">076 687 1710</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SmartRose Research Portfolio</p>
+    </div>
+  </footer>
+
+  <a class="to-top-btn" href="#home" aria-label="Back to top">^</a>
+
+  <script src="./script.js"></script>
+</body>
+</html>
